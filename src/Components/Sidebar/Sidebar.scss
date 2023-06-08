@@ -1,0 +1,403 @@
+.Container {
+  display: flex;
+  height: 100vh;
+  .sidebar {
+    flex: 21.48%;
+    background: #132c31;
+    height: 100%;
+
+    .upperSidebar {
+      height: max-content;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0.3rem;
+      padding-bottom: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .threedotsicon {
+        width: max-content;
+        height: max-content;
+        margin-left: auto;
+      }
+
+      .Avatardiv {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-around;
+
+        .Avatar {
+          box-sizing: border-box;
+          width: 60.44px;
+          height: 60px;
+          left: 27.44px;
+          top: 34.77px;
+          border-radius: 50%;
+          border: 2px solid #00c5a1;
+          margin-right: 1rem;
+        }
+
+        .rightdiv {
+          .Welcome {
+            width: max-content;
+            height: 15px;
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 123.4%;
+            color: #132c31;
+            width: 109px;
+            color: #ffffff;
+          }
+          .ShopName {
+            width: max-content;
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 123.4%;
+            width: 136px;
+            color: #ffffff;
+          }
+          .Address {
+            margin: 2px;
+            width: 143.23px;
+            height: 10px;
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 123.4%;
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+      .ProfileCompletiondiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 11px;
+        gap: 7px;
+        width: max-content;
+        height: 25px;
+        background: rgba(0, 0, 0, 0.23);
+        border-radius: 17px;
+        padding: 0 0.5rem;
+        margin-left: 18%;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 123.4%;
+        color: #ffffff;
+      }
+    }
+    .lowerSidebar {
+      display: flex;
+      flex-direction: column;
+
+      height: 76.4%;
+
+      .linkdiv {
+        display: flex;
+        flex-direction: column;
+      }
+      .linkdiv > * {
+        margin-bottom: 1rem;
+      }
+      .link {
+        color: #ffffff;
+        display: flex;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        text-decoration: none;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .active {
+        background: rgba(137, 189, 187, 0.3);
+      }
+      .itemicon {
+        width: 35%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .Creatediv {
+        margin-top: 100px;
+        margin: auto;
+        button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 28px;
+          gap: 5px;
+          background: #89bdbb;
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+
+          font-family: "Lato", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 123.4%;
+
+          text-align: center;
+
+          color: #132c31;
+
+          flex: none;
+          order: 1;
+          flex-grow: 1;
+        }
+      }
+
+      .logoutDiv {
+        width: 100%;
+        height: 5.93%;
+        background: #7b0101;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        gap: 1rem;
+        margin-top: auto;
+        justify-content: center;
+      }
+    }
+  }
+
+  main {
+    flex: 78.52%;
+    background: linear-gradient(
+      180.26deg,
+      rgba(148, 237, 255, 0.6) 1.33%,
+      rgba(180, 252, 239, 0.6) 7.15%,
+      rgba(255, 255, 255, 0.6) 19.22%
+    ),
+    #eeeeee;
+  }
+}
+
+//media queries for tablets and smaller devices
+
+@media (max-width: 991px) {
+  .Container {
+    .sidebar {
+      flex: 16.11%;
+    }
+    main {
+      flex: 58.89%;
+    }
+  }
+}
+
+/* MaterialUI Modal */
+.modalbox {
+  height: max-content;
+  .modalnav {
+    padding: 0.3rem 2rem;
+    height: 57.05px;
+    background: #112d31;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .modalnavtitle {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 123.4%;
+      color: #ffffff;
+    }
+  }
+  .PopUpSecondDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 1rem;
+    .ContactDiv {
+      display: flex;
+
+      .ContactDivTitle {
+        font-family: "Lato", sans-serif;
+        width: 140.26px;
+        height: 34px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 123.4%;
+        color: #000000;
+        padding: 0 1rem;
+      }
+      input {
+        box-sizing: border-box;
+        width: 287.46px;
+        height: 38.11px;
+        background: #ffffff;
+        border: 1px solid #cecece;
+        border-radius: 4.44633px;
+      }
+    }
+    .ErrorDiv {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+
+      width: 259px;
+      align-items: center;
+      justify-content: center;
+
+      .Error {
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 123.4%;
+        color: #980404;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        width: 164px;
+        height: 41px;
+        background: #112d31;
+        border-radius: 28px;
+        margin-left: 20%;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 123.4%;
+        color: #ffffff;
+      }
+    }
+
+    .ShowDeliveryDiv {
+      width: 100%;
+      display: flex;
+      /* margin-top: 1rem; */
+      width: 460.72px;
+      align-items: center;
+      .ShowDeliveryDivTitle {
+        width: 129px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 123.4%;
+        font-family: "Lato", sans-serif;
+        color: #000000;
+        margin-right: 3rem;
+      }
+      .radiobtn input {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #132c31;
+      }
+      .InputDiv {
+        width: 42px;
+        height: 17px;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 123.4%;
+        color: #000000;
+        margin-left: 0.7rem;
+        margin-right: 1rem;
+      }
+    }
+
+   
+ 
+  }
+}
+
+.AddressDiv {
+  width: 100%;
+  display: flex;
+  /* margin-top: 1rem; */
+  width: 460.72px;
+  row-gap: 0.8rem;
+  flex-direction: column;
+
+  .AddressTitle {
+    width: 149px;
+   
+    height: 17px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 123.4%;
+    color: #000000;
+  
+  
+ 
+  }
+  .AddAddress {
+    width: max-content;
+    height: 19px;
+    padding: 0.2rem;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 123.4%;
+    color: #112d31;
+  }
+  .btn{
+display: flex;
+
+align-items: center;
+justify-content: center;
+padding: 12px 34px;
+gap: 10px;
+background: #112D31;
+border-radius: 10px;
+width: 60%;
+font-family: 'Lato',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 123.4%;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: auto;
+  }
+}
+
+.AdressInput {
+
+  display: flex;
+  width: 470.97px;
+  height: max-content;
+  background: rgba(137, 189, 187, 0.31);
+  border-radius: 13px;
+  align-items: center;
+  padding: 0.3rem;
+  label {
+    padding: 0.3rem;
+    width: 410.72px;
+    height: max-content;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123.4%;
+    color: #000000;
+  }
+
+
+}
