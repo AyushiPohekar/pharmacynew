@@ -55,7 +55,9 @@ const Sidebar = ({children}) => {
 
     <main>
       <div className='symboldiv'></div>
-      
+      <img src='/images/image 3.png' className='capsuleimg'/>
+      <div className='capsuleTitle'><span>CAPSULE</span><span>BUSINESS</span>
+      </div>
       <div>{children}</div>
       
       </main>

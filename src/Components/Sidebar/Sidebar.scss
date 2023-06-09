@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   .sidebar {
-    flex: 21.48%;
+    flex: 18%;
     background: #132c31;
     height: 100%;
 
@@ -171,14 +171,14 @@
   }
 
   main {
-    flex: 78.52%;
+    flex: 82%;
     background: linear-gradient(
-      180.26deg,
-      rgba(148, 237, 255, 0.6) 1.33%,
-      rgba(180, 252, 239, 0.6) 7.15%,
-      rgba(255, 255, 255, 0.6) 19.22%
-    ),
-    #eeeeee;
+        180.26deg,
+        rgba(148, 237, 255, 0.6) 1.33%,
+        rgba(180, 252, 239, 0.6) 7.15%,
+        rgba(255, 255, 255, 0.6) 19.22%
+      ),
+      #eeeeee;
   }
 }
 
@@ -191,6 +191,8 @@
     }
     main {
       flex: 58.89%;
+     
+    
     }
   }
 }
@@ -316,9 +318,6 @@
         margin-right: 1rem;
       }
     }
-
-   
- 
   }
 }
 
@@ -332,7 +331,7 @@
 
   .AddressTitle {
     width: 149px;
-   
+
     height: 17px;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -340,9 +339,6 @@
     font-size: 14px;
     line-height: 123.4%;
     color: #000000;
-  
-  
- 
   }
   .AddAddress {
     width: max-content;
@@ -355,31 +351,30 @@
     line-height: 123.4%;
     color: #112d31;
   }
-  .btn{
-display: flex;
+  .btn {
+    display: flex;
 
-align-items: center;
-justify-content: center;
-padding: 12px 34px;
-gap: 10px;
-background: #112D31;
-border-radius: 10px;
-width: 60%;
-font-family: 'Lato',sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 123.4%;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 34px;
+    gap: 10px;
+    background: #112d31;
+    border-radius: 10px;
+    width: 60%;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 123.4%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: auto;
   }
 }
 
 .AdressInput {
-
   display: flex;
   width: 470.97px;
   height: max-content;
@@ -398,6 +393,44 @@ margin: auto;
     line-height: 123.4%;
     color: #000000;
   }
+}
 
-
+.symboldiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 70%;
+  width: 121.77px;
+  height: 107.23px;
+  background: #d6f6f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+.capsuleimg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.capsuleTitle{
+  position: absolute;
+  top: 67px;
+  right: 6px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.capsuleTitle span{
+width: 63.37px;
+height: 12.93px;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 0.6875rem;
+line-height: 123.4%;
+letter-spacing: 0.05em;
+background: linear-gradient(104.39deg, #2A527A 23.9%, #75BAA6 74.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }

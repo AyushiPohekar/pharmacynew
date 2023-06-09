@@ -18,7 +18,7 @@ import { NavLink } from "react-router-dom";
 const SideNavLinks = ({ isOpen }) => {
   const menuItem = [
     {
-      path: "/",
+      path: "/"||"/create",
       name: "Orders",
       icon: <AiOutlineBorderOuter />,
     },

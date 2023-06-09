@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Navigate, Route, Routes } from "react-router-dom";
+import "./App.scss";
 import CreateOrder from "./Pages/CreateOrder";
 import Inventory from "./Pages/Inventory";
 import Offers from "./Pages/Offers";
@@ -13,11 +13,12 @@ function App() {
     <div className="App">
       <Sidebar>
         <Routes>
-          <Route path="/" element={<Orders />} />
+      
+          <Route path="/orders" element={<Orders />} />
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/premium" element={<Premium />} />
-          <Route path="/create" element={<CreateOrder />} />
+          <Route path="/orders/create" element={<CreateOrder />} />
           <Route path="/support" element={<Support />} />
         </Routes>
       </Sidebar>
